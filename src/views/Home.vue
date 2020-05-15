@@ -36,6 +36,10 @@
             <i class="el-icon-setting"></i>
             <span slot="title">个人信息</span>
           </el-menu-item>
+          <el-menu-item index="5">
+            <i class="el-icon-setting"></i>
+            <span slot="title">退出登录</span>
+          </el-menu-item>
         </el-menu>
       </el-col>
       <el-col :span="20">

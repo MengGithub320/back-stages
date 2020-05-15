@@ -38,7 +38,7 @@
             <h4>最近一周商品销售排行</h4>
              <el-table
              :header-cell-style="{background:'#eef1f6',color:'#606266'}"
-            :data="tableData"
+            :data="tableData.slice(0,5)"
             style="width: 100%">
                 <el-table-column
                 label="排名"
