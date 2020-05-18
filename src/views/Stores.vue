@@ -38,20 +38,20 @@
             <h4>最近一周商品销售排行</h4>
              <el-table
              :header-cell-style="{background:'#eef1f6',color:'#606266'}"
-            :data="tableData.slice(0,5)"
+            :data="tableData.slice(0,3)"
             style="width: 100%">
                 <el-table-column
                 label="排名"
                 width="180">
                 <template slot-scope="scope">
-                    <span>{{scope.row.SkuId}}</span>
+                    <span>{{scope.row.GoodsId}}</span>
                 </template>
             </el-table-column>
             <el-table-column
             label="商品"
             width="180">
             <template slot-scope="scope">
-                    <span>{{scope.row.GoodsId}}</span>
+                    <span>{{scope.row.GoodsName}}</span>
                 </template>
             </el-table-column>
             <el-table-column

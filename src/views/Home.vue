@@ -38,7 +38,9 @@
           </el-menu-item>
           <el-menu-item index="5">
             <i class="el-icon-setting"></i>
-            <span slot="title">退出登录</span>
+            <span slot="title">
+              <router-link to="/login">退出登录</router-link>
+              </span>
           </el-menu-item>
         </el-menu>
       </el-col>

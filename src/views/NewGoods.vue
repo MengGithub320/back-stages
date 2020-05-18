@@ -5,15 +5,6 @@
       <el-form-item label="商品id">
         <el-input v-model="form.id"></el-input>
       </el-form-item>
-      <el-form-item label="商品图像">
-        <el-input v-model="form.Pic"></el-input>
-      </el-form-item>
-      <!-- <el-form-item label="商品分类">
-        <el-select v-model="form.classify" placeholder="请选择商品类别">
-          <el-option label="爱情鲜花" value="loveflower"></el-option>
-          <el-option label="亲情鲜花" value="familyflower"></el-option>
-        </el-select>
-      </el-form-item> -->
       <el-form-item label="商品价格">
         <el-input v-model="form.Price"></el-input>
       </el-form-item>
@@ -31,19 +22,6 @@
 export default {
   data() {
     return {
-      fits: "fill",
-      url:
-        "https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
-      form: {
-        name: "",
-        region: "",
-        date1: "",
-        date2: "",
-        delivery: false,
-        type: [],
-        resource: "",
-        desc: ""
-      }
     };
   },
   methods: {
@@ -54,7 +32,6 @@ export default {
         url: "/goods/addgoods",
         data: {
           goodsId: this.form.id,
-          goodsPic: this.form.Pic,
           goodsPrice: this.form.Price,
           goodsSum: this.form.Sum
         }
